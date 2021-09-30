@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner.runner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="MacBook-Pro-de-Raul.local" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/Google.feature:3 ?[0m# As a user I enter a search criteria in Google
+
+1 Scenarios (?[31m1 failed?[0m)
+4 Steps (?[31m1 failed?[0m, ?[36m3 skipped?[0m)
+0m3,957s
+
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input class="gNO89b" value="Buscar con Google" aria-label="Buscar con Google" name="btnK" type="submit" data-ved="0ahUKEwi30aahyqTzAhV7SvEDHfKpDUMQ4dUDCA0"> is not clickable at point (519, 271). Other element would receive the click: <div class="eLZYyf">...</div>
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Raul.local', ip: 'fe80:0:0:0:1cdc:234e:5936:b6ad%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /var/folders/st/tf9mr8tj32v...}, goog:chromeOptions: {debuggerAddress: localhost:49787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d52a23e7e001710604d91adcfdbf8ce
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.BasePage.clickElement(BasePage.java:35)
+	at pages.GooglePage.clickGoogleSearch(GooglePage.java:16)
+	at steps.GoogleSteps.navigateToGoogle(GoogleSteps.java:13)
+	at ✽.I am on the Google search page(src/test/resources/features/Google.feature:4)
+
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

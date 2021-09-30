@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test Google search functionality" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-09-29T16:15:37" hostname="MacBook-Pro-de-Raul.local" time="3.855">
+  <properties/>
+  <testcase name="As a user I enter a search criteria in Google" classname="Test Google search functionality" time="3.855">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class=&quot;gNO89b&quot; value=&quot;Buscar con Google&quot; aria-label=&quot;Buscar con Google&quot; name=&quot;btnK&quot; type=&quot;submit&quot; data-ved=&quot;0ahUKEwi30aahyqTzAhV7SvEDHfKpDUMQ4dUDCA0&quot;&gt; is not clickable at point (519, 271). Other element would receive the click: &lt;div class=&quot;eLZYyf&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=94.0.4606.61)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MacBook-Pro-de-Raul.local', ip: 'fe80:0:0:0:1cdc:234e:5936:b6ad%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_201'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /var/folders/st/tf9mr8tj32v...}, goog:chromeOptions: {debuggerAddress: localhost:49787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7d52a23e7e001710604d91adcfdbf8ce" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class=&quot;gNO89b&quot; value=&quot;Buscar con Google&quot; aria-label=&quot;Buscar con Google&quot; name=&quot;btnK&quot; type=&quot;submit&quot; data-ved=&quot;0ahUKEwi30aahyqTzAhV7SvEDHfKpDUMQ4dUDCA0&quot;&gt; is not clickable at point (519, 271). Other element would receive the click: &lt;div class=&quot;eLZYyf&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-de-Raul.local', ip: 'fe80:0:0:0:1cdc:234e:5936:b6ad%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /var/folders/st/tf9mr8tj32v...}, goog:chromeOptions: {debuggerAddress: localhost:49787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d52a23e7e001710604d91adcfdbf8ce
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.BasePage.clickElement(BasePage.java:35)
+	at pages.GooglePage.clickGoogleSearch(GooglePage.java:16)
+	at steps.GoogleSteps.navigateToGoogle(GoogleSteps.java:13)
+	at ✽.I am on the Google search page(src/test/resources/features/Google.feature:4)
+</failure>
+  </testcase>
+  <system-out><![CDATA[?[31mF?[0m?[36m-?[0m?[36m-?[0m?[36m-?[0m]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 27695
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1632932140.046][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+sep 29, 2021 6:15:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>
