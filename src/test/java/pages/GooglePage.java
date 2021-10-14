@@ -1,11 +1,11 @@
 package pages;
 
+import org.openqa.selenium.By;
+
 public class GooglePage extends BasePage {
 
-    // private String searchButton =
-    // "//body[1]/div[1]/div[3]/form[1]/div[1]/div[1]/div[2]/div[2]/div[5]/center[1]/input[1]";
-    private String searchButton = "#L2AGLb > div";
-
+    private String acceptCookiesButton = "L2AGLb";
+    private String searchButton = "//input[@value='Buscar con Google']";
     private String searchTextField = "//body/div[1]/div[3]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]";
 
     public GooglePage() {
@@ -14,6 +14,9 @@ public class GooglePage extends BasePage {
 
     public void navigateToGoogle() {
         navigateTo("https://www.google.com");
+        driver.manage().window().maximize();
+        driver.getWindowHandle();
+        driver.findElement(By.id(acceptCookiesButton)).click();
     }
 
     public void clickGoogleSearch() {
